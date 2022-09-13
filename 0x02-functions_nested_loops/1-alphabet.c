@@ -1,16 +1,18 @@
-#include "main.h"
+#include <unistd.h>
 /**
  * print_alphabet - this program prints alphabet
- * 
+ *
  * Return: 0
  */
+
 void print_alphabet(void)
 {
-	char c;
+	char alfa = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
+	while (alfa <= 'z')
 	{
-		_putchar(c);
+		write(1, &alfa, 1);
+		alfa++;
 	}
-_putchar('\n');
+	write(1, "\n", 1);
 }
