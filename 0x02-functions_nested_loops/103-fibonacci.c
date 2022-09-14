@@ -5,9 +5,12 @@
  * followed by a new line
  * Return: Always 0 (Success)
  */
-int main(void)
+int main (void)
 {
-	int i;
+	int 1;
+	unsigned long int j, k, next, sum;
+
+	j = 1;
 	k = 2;
 	sum = 0;
 
@@ -21,9 +24,6 @@ int main(void)
 		j = k;
 		k = next;
 	}
-
 	printf("%lu\n", sum);
-
 	return (0);
 }
-
