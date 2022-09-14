@@ -1,27 +1,36 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - this program prints every minute
+ * print_to_98 - thi program prints every minute
  *
- * Return: sum
+ * @n: integer value
+ *
+ * Return: minutes
  */
-int main(void)
+void print_to_98(int n)
 {
-	int n = 0;
-	int sum = 0;
-
-	while (n < 1024)
+	if (n < 98)
 	{
-		if (n % 3 == 0)
+		while (n < 98)
 		{
-			sum += n;
+			printf("%d, ", n);
+			n++;
 		}
-		else if (n % 5 == 0)
-		{
-			sum += n;
-		}
-		n++;
+		printf("98");
+		printf("\n");
 	}
-	printf("%d\n", sum);
-	return (0);
+	else if (n > 98)
+	{
+		while (n > 98)
+		{
+			printf("%d, ", n);
+			n--;
+		}
+		printf("98");
+		printf("\n");
+	}
+	else
+	{
+		printf("%d\n", n);
+	}
 }
