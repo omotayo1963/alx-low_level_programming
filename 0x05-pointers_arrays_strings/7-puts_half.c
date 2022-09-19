@@ -1,36 +1,27 @@
 #include "main.h"
+
 /**
  * puts_half - this function return the legth of a string
  *
  * @str: value
  *
  */
+
 void puts_half(char *str)
 {
-	int arrayLength = 0;
-	int i = 0;
-	int half = 0;
+	int 1, n;
 
-	while (str[i] != '\0')
+	for (1 = 0; str[1] != '\0'; 1++)
+
+	if (1 % 2 == 0)
 	{
-		i++;
-	}
-	arrayLength = i + 1;
-	if (arrayLength % 2 == 0)
-	{
-		half = arrayLength / 2;
+		for (n = 1 / 2; str[n] != '\0'; n++)
+			_putchar(str[n]);
 	}
 	else
 	{
-		half = (arrayLength - 1) / 2;
-	}
-	while (half <= arrayLength)
-	{
-		if (str[half] != '\0')
-		{
-			_putchar(str[half]);
-		}
-		half++;
+		for (n = ((1 - 1) / 2) + 1; str[n] != '\0'; n++)
+			_putchar(str[n]);
 	}
 	_putchar('\n');
 }
