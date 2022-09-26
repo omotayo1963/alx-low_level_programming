@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _memmset - fills a memory block with a constant byte
- * @s: address to memory block
- * @b: char to be used 
+ * _memset - Fills a memory block with a constant byte
+ * @s: address to memory block 
+ * @b: char to be used
  * @n: number of bytes to be used
  *
  * Return: pointer to the memory block
