@@ -1,18 +1,22 @@
 #include "main.h"
 
 /**
- * _memset -> this memory set function
- * @s: string
- * @b: character
- * @n: an integer
- * Return: a string
+ * _memset - this function fills n bytes
+ *
+ * @s: s value of the memory area that has to get fills
+ * @b: constat
+ * @n: fills n bytes of memory area
+ *
+ * Return: s
  */
+
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int a;
+	char *p = s;
 
-	for (a = 0; a < n; a++)
-		s[a] = b;
-
+	while (n-- > 0)
+	{
+		*p++ = b;
+	}
 	return (s);
 }
