@@ -5,8 +5,8 @@
  * @head : pointer to the head of the list
  * Return: sum of all the data (n),
  *         or 0 - if the list is empty
- * Author: christian joshua
- * created: 24-10-2022
+ * Author: adeniyi muizudeen
+ * created: 25-10-2022
  */
 int sum_listint(listint_t *head)
 {
